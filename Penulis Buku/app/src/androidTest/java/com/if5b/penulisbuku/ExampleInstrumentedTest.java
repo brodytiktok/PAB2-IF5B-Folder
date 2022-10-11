@@ -1,4 +1,4 @@
-package com.if5b.myapplication.penulisbukuku;
+package com.if5b.penulisbuku;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.if5b.myapplication.penulisbukuku", appContext.getPackageName());
+        assertEquals("com.if5b.penulisbuku", appContext.getPackageName());
     }
 }

@@ -1,4 +1,4 @@
-package com.if5b.myapplication.penulisbukuku;
+package com.if5b.penulisbuku;
 
 import org.junit.Test;
 
