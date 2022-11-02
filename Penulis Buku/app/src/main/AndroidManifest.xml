@@ -13,13 +13,21 @@
         android:theme="@style/Theme.PenulisBuku"
         tools:targetApi="31">
         <activity
+            android:name=".UbahActivity"
+            android:label="Ubah Buku"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".TambahActivity"
             android:label="Tambah Buku"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
-            android:label="Data Buku"
-            android:exported="true">
+            android:exported="true"
+            android:label="Data Buku">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

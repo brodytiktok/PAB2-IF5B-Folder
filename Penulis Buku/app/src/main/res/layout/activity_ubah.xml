@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TambahActivity">
+    tools:context=".UbahActivity">
 
     <LinearLayout
-        android:id="@+id/ll_tambah_buku"
+        android:id="@+id/ll_ubah_buku"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -15,6 +15,7 @@
         android:layout_marginLeft="32dp"
         android:layout_centerInParent="true"
         >
+
         <TextView
             android:id="@+id/judul_layout"
             android:layout_width="wrap_content"
@@ -41,6 +42,7 @@
             android:textSize="20sp"
             android:layout_marginBottom="6dp"
             />
+
         <EditText
             android:id="@+id/et_penulis"
             android:layout_width="match_parent"
@@ -67,11 +69,14 @@
             android:inputType="number"
             />
         <Button
-            android:id="@+id/btn_simpan"
+            android:id="@+id/btn_ubah"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Simpan"
+            android:text="Ubah dan Simpan"
             android:layout_marginTop="32dp"
             />
+
+
     </LinearLayout>
+
 </RelativeLayout>
