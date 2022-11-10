@@ -11,7 +11,7 @@ import com.kazuya.if5b.contact.databases.UserDatabase;
 public class DeleteLoader extends AsyncTaskLoader<Integer> {
     private int userId;
     private UserDatabase db;
-    public DeleteLoader(@NonNull Context context) {
+    public DeleteLoader(@NonNull Context context, int id) {
         super(context);
         this.userId = userId;
         db = UserDatabase.getInstance(context);
