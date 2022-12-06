@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.if5b.myapplication.Models.ValueNoData;
 import com.if5b.myapplication.Services.APIService;
+import com.if5b.myapplication.Services.Utilities;
 import com.if5b.myapplication.databinding.ActivityMainBinding;
 import com.if5b.myapplication.databinding.ActivityRegisterBinding;
 
@@ -54,7 +55,7 @@ public class RegisterActivity extends AppCompatActivity {
                 }
             }
 
-            binding.btnLogin.set
+
 
             private void register(String username, String password) {
                 showProgressBar();
@@ -66,7 +67,7 @@ public class RegisterActivity extends AppCompatActivity {
                             int success = response.body().getSuccess();
                             String message = response.body().getMessage();
                             if (success == 1) {
-                                Toast.makeText(RegisterActivity.this,  message, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(RegisterActivity.this, message, Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                                 startActivity(intent);
                                 finish();
@@ -86,12 +87,13 @@ public class RegisterActivity extends AppCompatActivity {
                 });
             }
         });
+    }
 
-        private void showProgressBar() {
-            binding.progressBar.setVisibility(View.VISIBLE);
-        }
-        private void hideProgressBar() {
-            binding.progressBar.setVisibility(View.GONE);
-        }
+    private void showProgressBar() {
+        binding.progressBar.setVisibility(View.VISIBLE);
+    }
+
+    private void hideProgressBar() {
+        binding.progressBar.setVisibility(View.GONE);
     }
 }

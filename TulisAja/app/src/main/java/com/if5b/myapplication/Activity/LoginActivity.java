@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.if5b.myapplication.Models.ValueNoData;
 import com.if5b.myapplication.Services.APIService;
+import com.if5b.myapplication.Services.Utilities;
 import com.if5b.myapplication.databinding.ActivityLoginBinding;
 import com.if5b.myapplication.databinding.ActivityMainBinding;
 
@@ -54,7 +55,7 @@ public class LoginActivity extends AppCompatActivity {
                 api.login(Utilities.TULIS_AJA_APIKEY, username, password).enqueue(new Callback<ValueNoData>(){
 
                     @Override
-                    public void onResponse(Call call, Response response) throws IOException {
+                    public void onResponse(Call<ValueNoData> call, Response<ValueNoData> response) throws IOException {
 
                     }
 
@@ -65,5 +66,8 @@ public class LoginActivity extends AppCompatActivity {
                 });
             }
         });
+    }
+
+    private void showProgressBar() {
     }
 }
